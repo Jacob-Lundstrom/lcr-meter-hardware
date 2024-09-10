@@ -5,6 +5,36 @@
 	(uuid "ba333b18-b098-477b-9dd4-aab7b9764d9c")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 160.02 71.12) (xy 170.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23118a64-f1f5-44ee-9a51-06b5564043cb")
+	)
+	(wire
+		(pts
+			(xy 160.02 109.22) (xy 170.18 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a81050d-5112-4e91-8c94-e82fb57ef867")
+	)
+	(wire
+		(pts
+			(xy 160.02 114.3) (xy 170.18 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be450e10-9935-4e69-aaae-359afa612e4a")
+	)
 	(sheet
 		(at 119.38 66.04)
 		(size 40.64 22.86)
@@ -34,6 +64,46 @@
 				)
 				(justify left top)
 			)
+		)
+		(pin "DAC_SCK" input
+			(at 119.38 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d56d0388-1809-4be6-bb25-1e0d0670a392")
+		)
+		(pin "DAC_SDI" input
+			(at 119.38 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bc8b74cb-94ee-4741-a0bb-ba058a1404ce")
+		)
+		(pin "DAC_nCS" input
+			(at 119.38 71.12 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c7f6dc53-17d7-4921-a64e-08d0ffbe9432")
+		)
+		(pin "I_OUT" output
+			(at 160.02 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f1ca88eb-4f04-460b-86af-c3e650b709cb")
 		)
 		(instances
 			(project "lcr-meter"
@@ -73,6 +143,36 @@
 				(justify left top)
 			)
 		)
+		(pin "SHUNT_SENSE" output
+			(at 170.18 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "037e36c7-664b-4147-aaec-2f210b4f3823")
+		)
+		(pin "V_SENSE" output
+			(at 170.18 114.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c92aa762-ef6e-4421-a748-c9e7c832f9db")
+		)
+		(pin "I_LOAD" input
+			(at 170.18 71.12 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "344bfe47-fdfc-4f8b-88f4-1d902a796ad9")
+		)
 		(instances
 			(project "lcr-meter"
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c"
@@ -83,7 +183,7 @@
 	)
 	(sheet
 		(at 119.38 102.87)
-		(size 41.91 19.05)
+		(size 40.64 19.05)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -110,6 +210,66 @@
 				)
 				(justify left top)
 			)
+		)
+		(pin "CH1" input
+			(at 160.02 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5426188c-39de-4cbd-8583-1f516c91a12d")
+		)
+		(pin "CH0" input
+			(at 160.02 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b79d8526-7a21-45dc-9fd5-dd4f266b473a")
+		)
+		(pin "ADC_nCS" input
+			(at 119.38 107.95 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "edf2b8d8-5c75-491c-b559-eec9b166c08d")
+		)
+		(pin "ADC_CLK" input
+			(at 119.38 110.49 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9630c3bb-0145-4d5f-8f2a-ab74e89171b9")
+		)
+		(pin "ADC_DOUT" output
+			(at 119.38 113.03 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "64f6fd2b-5d86-4a1b-84cb-d037c4eb9f17")
+		)
+		(pin "ADC_DIN" input
+			(at 119.38 115.57 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0c251670-9c6d-4e22-8180-ae78f4703bee")
 		)
 		(instances
 			(project "lcr-meter"

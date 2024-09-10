@@ -5,33 +5,31 @@
 	(uuid "5f9b6478-c49e-43d1-9b68-caba04dd87a6")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Analog_ADC:MCP3201"
+		(symbol "Analog_ADC:MCP3202"
 			(pin_names
-				(offset 0.762)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 3.81 8.89 0)
+				(at -6.35 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "MCP3201"
-				(at 3.81 6.35 0)
+			(property "Value" "MCP3202"
+				(at 11.43 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 19.05 -8.89 0)
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -39,8 +37,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21290D.pdf"
-				(at 20.32 -2.54 0)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21034D.pdf"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -48,7 +46,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "2.7V 12-Bit A/D Converter with SPI™ Serial Interface, PDIP-8/SOIC-8/MSOP-8/TSSOP-8"
+			(property "Description" "A/D Converter, 12-Bit, 2-Channel, SPI Interface, 2.7V-5.5V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -57,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "12-Bit Differential ADC SPI 1ch"
+			(property "ki_keywords" "12bit ADC Reference Single Supply SPI 2ch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -66,7 +64,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm*"
+			(property "ki_fp_filters" "DIP*W7.62mm** SOIC*3.9x4.9mm*P1.27mm* TSSOP*3x3mm*P0.65mm* MSOP*3x3mm*P0.65mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -75,10 +73,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP3201_0_0"
+			(symbol "MCP3202_0_1"
 				(polyline
 					(pts
-						(xy -11.43 0) (xy -6.35 5.08) (xy 10.16 5.08) (xy 10.16 -5.08) (xy -6.35 -5.08) (xy -11.43 0)
+						(xy 15.24 10.16) (xy -7.62 10.16) (xy -12.7 0) (xy -7.62 -10.16) (xy 15.24 -10.16) (xy 15.24 10.16)
 					)
 					(stroke
 						(width 0.254)
@@ -89,11 +87,11 @@
 					)
 				)
 			)
-			(symbol "MCP3201_1_1"
-				(pin power_in line
-					(at -2.54 7.62 270)
+			(symbol "MCP3202_1_1"
+				(pin input line
+					(at 17.78 5.08 180)
 					(length 2.54)
-					(name "Vref"
+					(name "~{CS}/SHDN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -108,10 +106,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 2.54 0)
-					(length 3.81)
-					(name "IN+"
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "CH0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -126,10 +124,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 -2.54 0)
-					(length 3.81)
-					(name "IN-"
+				(pin passive line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "CH1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -145,9 +143,9 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 -7.62 90)
+					(at 0 -12.7 90)
 					(length 2.54)
-					(name "Vss"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -163,9 +161,9 @@
 					)
 				)
 				(pin input line
-					(at 12.7 -2.54 180)
+					(at 17.78 -5.08 180)
 					(length 2.54)
-					(name "~{CS}/SHDN"
+					(name "DIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -181,9 +179,9 @@
 					)
 				)
 				(pin output line
-					(at 12.7 0 180)
+					(at 17.78 -2.54 180)
 					(length 2.54)
-					(name "Dout"
+					(name "DOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -199,7 +197,7 @@
 					)
 				)
 				(pin input line
-					(at 12.7 2.54 180)
+					(at 17.78 2.54 180)
 					(length 2.54)
 					(name "CLK"
 						(effects
@@ -217,9 +215,9 @@
 					)
 				)
 				(pin power_in line
-					(at 2.54 7.62 270)
+					(at 0 12.7 270)
 					(length 2.54)
-					(name "Vdd"
+					(name "VDD/VREF"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -356,126 +354,6 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -573,9 +451,81 @@
 			)
 		)
 	)
+	(hierarchical_label "CH0"
+		(shape input)
+		(at 125.73 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "125cfa58-69a3-4fbd-b411-5db88ff7b696")
+	)
+	(hierarchical_label "ADC_DIN"
+		(shape input)
+		(at 156.21 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "20cd26f5-af7c-4b4f-a7da-cd9d1cf8b395")
+	)
+	(hierarchical_label "CH1"
+		(shape input)
+		(at 125.73 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7954db26-11b1-40a5-bfc6-a0f6dde36079")
+	)
+	(hierarchical_label "ADC_CLK"
+		(shape input)
+		(at 156.21 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7eff37d8-5c19-4e60-8eee-2b742c69299d")
+	)
+	(hierarchical_label "ADC_DOUT"
+		(shape output)
+		(at 156.21 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "968d4f70-dc8c-49bc-b5ab-785ed58f60c2")
+	)
+	(hierarchical_label "ADC_nCS"
+		(shape input)
+		(at 156.21 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d6f5f422-34d8-4cf6-837a-5fea2034aa76")
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 101.6 0)
+		(at 138.43 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -584,7 +534,7 @@
 		(fields_autoplaced yes)
 		(uuid "14b8ab50-b11a-421c-91ff-267893680466")
 		(property "Reference" "#PWR039"
-			(at 149.86 107.95 0)
+			(at 138.43 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -593,7 +543,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 106.68 0)
+			(at 138.43 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -601,7 +551,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 101.6 0)
+			(at 138.43 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -610,7 +560,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 101.6 0)
+			(at 138.43 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -619,7 +569,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 101.6 0)
+			(at 138.43 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -640,162 +590,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Analog_ADC:MCP3201")
-		(at 152.4 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "86f2a972-a812-4faf-902c-d23da06cbdf9")
-		(property "Reference" "U2"
-			(at 152.0541 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP3201"
-			(at 152.0541 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21290D.pdf"
-			(at 172.72 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "2.7V 12-Bit A/D Converter with SPI™ Serial Interface, PDIP-8/SOIC-8/MSOP-8/TSSOP-8"
-			(at 152.4 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "d1a8bc12-e284-48fa-9bd0-ba868093f69f")
-		)
-		(pin "8"
-			(uuid "839cf49e-2c00-46ba-8c56-4fa4a8d962c1")
-		)
-		(pin "2"
-			(uuid "cc738822-3f66-4dc3-b3bc-f8bf9f3810de")
-		)
-		(pin "3"
-			(uuid "0a027397-094e-4edb-bc65-c23f0ae5ce36")
-		)
-		(pin "4"
-			(uuid "c3a9a6c6-0bfc-4e4c-b8b8-a3498599eeaa")
-		)
-		(pin "1"
-			(uuid "2ede2592-7c62-40c5-9e9b-782dd3a70b57")
-		)
-		(pin "5"
-			(uuid "264b7db5-f74b-4161-9342-dffb3f5620c6")
-		)
-		(pin "7"
-			(uuid "bde8b931-19fb-452a-9952-4ef4bdb0ad28")
-		)
-		(instances
-			(project ""
-				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/dc4920c7-bef7-400a-82e9-2e6f0b5b3c21"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 149.86 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98e55ba5-3c67-4221-83cb-c4c37def0dba")
-		(property "Reference" "#PWR038"
-			(at 149.86 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 149.86 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 149.86 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 149.86 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "36f52884-f468-44b6-9c01-ef95d58bcb94")
-		)
-		(instances
-			(project ""
-				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/dc4920c7-bef7-400a-82e9-2e6f0b5b3c21"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
-		(at 154.94 86.36 0)
+		(at 138.43 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -804,7 +600,7 @@
 		(fields_autoplaced yes)
 		(uuid "d80fe05a-9bb0-42c8-9530-6a2e238b8e64")
 		(property "Reference" "#PWR037"
-			(at 154.94 90.17 0)
+			(at 138.43 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -813,7 +609,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 154.94 81.28 0)
+			(at 138.43 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -821,7 +617,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 86.36 0)
+			(at 138.43 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -830,7 +626,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 86.36 0)
+			(at 138.43 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -839,7 +635,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 154.94 86.36 0)
+			(at 138.43 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -854,6 +650,94 @@
 			(project ""
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/dc4920c7-bef7-400a-82e9-2e6f0b5b3c21"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_ADC:MCP3202")
+		(at 138.43 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed322844-9db8-4036-9ea7-036b3246743e")
+		(property "Reference" "U17"
+			(at 140.6241 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP3202"
+			(at 140.6241 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21034D.pdf"
+			(at 138.43 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "A/D Converter, 12-Bit, 2-Channel, SPI Interface, 2.7V-5.5V"
+			(at 138.43 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "a08272b9-3cd7-4250-aaa0-4abed81e2793")
+		)
+		(pin "4"
+			(uuid "ecae263d-2f04-4676-bc86-cd8d7e670981")
+		)
+		(pin "1"
+			(uuid "3951e253-b0c4-4e66-9af6-68abe486c630")
+		)
+		(pin "7"
+			(uuid "28f0acbb-1232-46f3-a32b-7583d5982e8d")
+		)
+		(pin "2"
+			(uuid "a54185ec-5e04-4ffb-8068-ba1ec082ac54")
+		)
+		(pin "5"
+			(uuid "92559eac-38f1-46da-b993-a757ac28b4a6")
+		)
+		(pin "6"
+			(uuid "f9b796fd-384a-411c-9587-0c87916a80bc")
+		)
+		(pin "3"
+			(uuid "d535b044-f7e8-44c5-90ba-b0a5729c8fbf")
+		)
+		(instances
+			(project ""
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/dc4920c7-bef7-400a-82e9-2e6f0b5b3c21"
+					(reference "U17")
 					(unit 1)
 				)
 			)
