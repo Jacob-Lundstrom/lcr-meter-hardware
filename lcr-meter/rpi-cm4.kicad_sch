@@ -2,7 +2,159 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "a9761a8c-ca59-42e0-b352-0d8c0e7cbb81")
+	(uuid "256914c3-1d7b-4d57-9980-764b26a0049b")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 66.04 124.46)
+		(size 43.18 33.02)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "41bdffed-128a-42dc-8ebc-1e039c7e32ad")
+		(property "Sheetname" "RTC"
+			(at 66.04 123.7484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RTC.kicad_sch"
+			(at 66.04 158.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/fa0205ff-d840-4c89-b6d9-0bee6ad4a2ef"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 77.47 55.88)
+		(size 33.02 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "744b4b09-81e0-4bc7-8570-49840632c7bc")
+		(property "Sheetname" "GPIO"
+			(at 77.47 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CM4_GPIO.kicad_sch"
+			(at 77.47 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/fa0205ff-d840-4c89-b6d9-0bee6ad4a2ef"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 205.74 76.2)
+		(size 30.48 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b6722af3-221f-4f9f-a2ef-4539be9909c4")
+		(property "Sheetname" "USB Hub"
+			(at 205.74 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB2-HUB.kicad_sch"
+			(at 205.74 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/fa0205ff-d840-4c89-b6d9-0bee6ad4a2ef"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 132.08 55.88)
+		(size 40.64 66.04)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "eb4da58b-6641-408c-9d58-4eab2fcc248b")
+		(property "Sheetname" "High-Speed"
+			(at 132.08 55.1684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CM4_HighSpeed.kicad_sch"
+			(at 132.08 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/fa0205ff-d840-4c89-b6d9-0bee6ad4a2ef"
+					(page "8")
+				)
+			)
+		)
+	)
 )

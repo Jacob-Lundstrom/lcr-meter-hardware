@@ -45,44 +45,6 @@
 	)
 	(sheet
 		(at 170.18 66.04)
-		(size 43.18 22.86)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "5d9cb150-b832-4b77-ba02-45afa72d7973")
-		(property "Sheetname" "Power Amplifier"
-			(at 170.18 65.3284 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power-amplifier.kicad_sch"
-			(at 170.18 89.4846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "lcr-meter"
-				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 223.52 66.04)
 		(size 49.53 55.88)
 		(fields_autoplaced yes)
 		(stroke
@@ -94,7 +56,7 @@
 		)
 		(uuid "b8718128-d741-4369-b265-769f39903469")
 		(property "Sheetname" "Sensing"
-			(at 223.52 65.3284 0)
+			(at 170.18 65.3284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -103,7 +65,7 @@
 			)
 		)
 		(property "Sheetfile" "sensing.kicad_sch"
-			(at 223.52 122.5046 0)
+			(at 170.18 122.5046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -153,6 +115,73 @@
 			(project "lcr-meter"
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 66.04)
+		(size 19.05 26.67)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f2a8366c-faa8-47bd-8bfe-1b09106a7ae4")
+		(property "Sheetname" "PSUs"
+			(at 29.21 65.3284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PSUs.kicad_sch"
+			(at 29.21 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 29.21 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "+5v" output
+			(at 48.26 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "35887cbb-371d-4c71-80aa-6693e1f3a123")
+		)
+		(pin "+12v" output
+			(at 48.26 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9536aad7-528d-4e48-b243-da9c3ad0754a")
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c"
+					(page "8")
 				)
 			)
 		)
