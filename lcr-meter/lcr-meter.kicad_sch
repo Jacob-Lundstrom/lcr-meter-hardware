@@ -318,25 +318,35 @@
 				(hide yes)
 			)
 		)
-		(pin "+5v" output
-			(at 48.26 69.85 0)
+		(pin "-5V" output
+			(at 48.26 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "35887cbb-371d-4c71-80aa-6693e1f3a123")
+			(uuid "d3f61dcb-9d2b-4a16-a776-9a135d2e5b33")
 		)
-		(pin "+12v" output
-			(at 48.26 73.66 0)
+		(pin "+12V" output
+			(at 48.26 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9536aad7-528d-4e48-b243-da9c3ad0754a")
+			(uuid "5482eb06-6f9a-4823-b51d-1cfc76623576")
+		)
+		(pin "+5V" output
+			(at 48.26 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ef6d88f6-2b6f-41dd-9e97-76d26d73d872")
 		)
 		(instances
 			(project "lcr-meter"
