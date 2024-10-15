@@ -74,14 +74,6 @@
 					)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(symbol "ComputeModule4-CM4_1_0"
 				(text "GPIO"
 					(at 0 6.35 0)
@@ -1831,7 +1823,7 @@
 				(pin passive line
 					(at -33.02 -60.96 0)
 					(length 2.54)
-					(name "AnalogIP0"
+					(name "AnalogIP1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1867,7 +1859,7 @@
 				(pin passive line
 					(at -33.02 -63.5 0)
 					(length 2.54)
-					(name "AnalogIP1"
+					(name "AnalogIP0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4336,8 +4328,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U12"
-				(at 2.54 10.541 0)
+			(property "Reference" "U"
+				(at -2.54 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4345,14 +4337,14 @@
 				)
 			)
 			(property "Value" "RT9742SNGV"
-				(at 2.54 8.2296 0)
+				(at 3.81 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -4361,7 +4353,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.richtek.com/assets/product_file/RT9742/DS9742-09.pdf"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -4371,60 +4363,6 @@
 				)
 			)
 			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field4" "Farnell"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field5" "2575555"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field6" "RT9742SNGV"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field7" "RichTek"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Part Description" "Power Switch/Driver 1:1 N-Channel 500mA SOT-23-3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Field8" "USWI00155"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4465,7 +4403,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_in line
 					(at 10.16 3.81 180)
 					(length 2.54)
 					(name "OUT"
@@ -4641,9 +4579,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4691,7 +4629,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4717,8 +4655,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6562,7 +6500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 259.08 81.28 0)
 			(effects
 				(font
@@ -6627,7 +6565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 105.41 157.48 0)
 			(effects
 				(font
@@ -6692,7 +6630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 39.37 157.48 0)
 			(effects
 				(font
@@ -6749,7 +6687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.tme.eu/Document/f15dffbcfad8545e17826f72d36911c8/206A-SEAN-R03.pdf"
+		(property "Datasheet" "https://en.wikipedia.org/wiki/HDMI"
 			(at 264.795 50.8 0)
 			(effects
 				(font
@@ -6758,7 +6696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "HDMI 1.4+ type A connector"
 			(at 264.16 50.8 0)
 			(effects
 				(font
@@ -6935,7 +6873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 151.13 180.34 0)
 			(effects
 				(font
@@ -6944,7 +6882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 151.13 180.34 0)
 			(effects
 				(font
@@ -7058,7 +6996,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 118.11 180.34 0)
 			(effects
 				(font
@@ -7067,7 +7005,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 118.11 180.34 0)
 			(effects
 				(font
@@ -7313,7 +7251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 151.13 184.15 0)
 			(effects
 				(font
@@ -7378,7 +7316,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 118.11 184.15 0)
 			(effects
 				(font
@@ -7443,7 +7381,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 129.54 184.15 0)
 			(effects
 				(font
@@ -7524,7 +7462,7 @@
 				)
 			)
 		)
-		(property "Field5" "2off DF40C-100DS-0.4V"
+		(property "Field5" "2x DF40C-100DS-0.4V"
 			(at 72.39 22.2758 0)
 			(effects
 				(font

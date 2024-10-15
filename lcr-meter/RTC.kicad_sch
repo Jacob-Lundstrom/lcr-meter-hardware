@@ -397,7 +397,8 @@
 			)
 		)
 		(symbol "Connector_Generic:Conn_01x04"
-			(pin_names hide)
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -467,7 +468,7 @@
 					(start -1.27 -4.953)
 					(end 0 -5.207)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -478,7 +479,7 @@
 					(start -1.27 -2.413)
 					(end 0 -2.667)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -489,7 +490,7 @@
 					(start -1.27 0.127)
 					(end 0 -0.127)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -500,7 +501,7 @@
 					(start -1.27 2.667)
 					(end 0 2.413)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -666,8 +667,8 @@
 					)
 				)
 				(rectangle
-					(start -1.5748 1.1938)
-					(end 1.4732 0.6858)
+					(start -1.524 1.016)
+					(end 1.524 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -702,7 +703,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 3.429) (xy 1.524 3.429)
+						(xy 0.762 3.048) (xy 1.778 3.048)
 					)
 					(stroke
 						(width 0.254)
@@ -714,7 +715,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 3.937) (xy 1.016 2.921)
+						(xy 1.27 3.556) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -902,7 +903,8 @@
 		)
 		(symbol "Device:Crystal_Small"
 			(pin_numbers hide)
-			(pin_names hide)
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1165,6 +1167,9 @@
 			)
 		)
 		(symbol "Diode:BAT54C"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1513,7 +1518,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PCF8563.pdf"
+			(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1711,9 +1716,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1761,7 +1766,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1787,8 +1792,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2904,7 +2909,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 106.68 144.78 0)
 			(effects
 				(font
@@ -2913,7 +2918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 106.68 144.78 0)
 			(effects
 				(font
@@ -3035,7 +3040,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 106.68 148.59 0)
 			(effects
 				(font
@@ -3092,7 +3097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/470531000_sd.pdf"
+		(property "Datasheet" "~"
 			(at 184.15 137.16 0)
 			(effects
 				(font
@@ -3101,7 +3106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 184.15 137.16 0)
 			(effects
 				(font
@@ -3210,7 +3215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 144.78 134.62 0)
 			(effects
 				(font
@@ -3219,7 +3224,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 144.78 134.62 0)
 			(effects
 				(font
@@ -3332,7 +3337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 177.8 147.32 0)
 			(effects
 				(font
@@ -3397,7 +3402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 91.44 73.66 0)
 			(effects
 				(font
@@ -3454,7 +3459,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p9.pdf"
+		(property "Datasheet" "~"
 			(at 46.228 63.246 90)
 			(effects
 				(font
@@ -3463,7 +3468,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single-cell battery"
 			(at 46.228 64.77 0)
 			(effects
 				(font
@@ -3576,7 +3581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 46.228 67.31 0)
 			(effects
 				(font
@@ -3631,7 +3636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/74LVC1G07.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
 			(at 227.33 62.23 0)
 			(effects
 				(font
@@ -3640,7 +3645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single Buffer Gate w/ Open Drain, Low-Voltage CMOS"
 			(at 227.33 62.23 0)
 			(effects
 				(font
@@ -3749,7 +3754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 195.58 54.61 0)
 			(effects
 				(font
@@ -3758,7 +3763,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 195.58 54.61 0)
 			(effects
 				(font
@@ -3861,7 +3866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 213.36 54.61 0)
 			(effects
 				(font
@@ -3870,7 +3875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 213.36 54.61 0)
 			(effects
 				(font
@@ -3983,7 +3988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 116.84 146.05 0)
 			(effects
 				(font
@@ -4040,7 +4045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 170.18 54.61 0)
 			(effects
 				(font
@@ -4049,7 +4054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 170.18 54.61 0)
 			(effects
 				(font
@@ -4163,7 +4168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 204.47 62.23 0)
 			(effects
 				(font
@@ -4172,7 +4177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 204.47 62.23 0)
 			(effects
 				(font
@@ -4294,7 +4299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 227.33 71.12 0)
 			(effects
 				(font
@@ -4359,7 +4364,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 170.18 58.42 0)
 			(effects
 				(font
@@ -4414,7 +4419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF85063A.pdf"
+		(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/PCF8563.pdf"
 			(at 91.44 55.88 0)
 			(effects
 				(font
@@ -4423,7 +4428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Realtime Clock/Calendar I2C Interface, SOIC-8"
 			(at 91.44 55.88 0)
 			(effects
 				(font
@@ -4555,7 +4560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Two pin crystal, small symbol"
 			(at 67.818 55.372 0)
 			(effects
 				(font
@@ -4643,7 +4648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.farnell.com/datasheets/2861240.pdf?_ga=2.129831176.54358802.1587372871-1787849031.1568210898&_gac=1.175311126.1587399424.EAIaIQobChMInOvF07P36AIVw7HtCh0NWwCeEAAYAyAAEgI0YfD_BwE"
+		(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds11005.pdf"
 			(at 46.228 54.102 0)
 			(effects
 				(font
@@ -4652,7 +4657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "dual schottky barrier diode, common cathode"
 			(at 46.228 52.07 0)
 			(effects
 				(font
@@ -4768,7 +4773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 57.658 54.6354 0)
 			(effects
 				(font
@@ -4825,7 +4830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 57.658 50.8254 0)
 			(effects
 				(font
@@ -4834,7 +4839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 57.658 50.8254 0)
 			(effects
 				(font

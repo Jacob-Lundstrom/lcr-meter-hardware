@@ -105,6 +105,16 @@
 			)
 			(uuid "f1ca88eb-4f04-460b-86af-c3e650b709cb")
 		)
+		(pin "DAC_MCLK" input
+			(at 119.38 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "13793aca-758c-4650-8764-cadb150a1274")
+		)
 		(instances
 			(project "lcr-meter"
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c"

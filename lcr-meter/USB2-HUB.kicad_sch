@@ -1944,6 +1944,9 @@
 			)
 		)
 		(symbol "Connector:USB_OTG"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1974,7 +1977,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 3.81 -1.27 0)
 				(effects
 					(font
@@ -2185,7 +2188,7 @@
 				)
 			)
 			(symbol "USB_OTG_1_1"
-				(pin power_in line
+				(pin passive line
 					(at 7.62 5.08 180)
 					(length 2.54)
 					(name "VBUS"
@@ -2203,7 +2206,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin bidirectional line
 					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "D-"
@@ -2221,7 +2224,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin bidirectional line
 					(at 7.62 0 180)
 					(length 2.54)
 					(name "D+"
@@ -2257,7 +2260,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 0 -10.16 90)
 					(length 2.54)
 					(name "GND"
@@ -2296,7 +2299,8 @@
 			)
 		)
 		(symbol "Connector_Generic:Conn_02x05_Odd_Even"
-			(pin_names hide)
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2366,7 +2370,7 @@
 					(start -1.27 -4.953)
 					(end 0 -5.207)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2377,7 +2381,7 @@
 					(start -1.27 -2.413)
 					(end 0 -2.667)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2388,7 +2392,7 @@
 					(start -1.27 0.127)
 					(end 0 -0.127)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2399,7 +2403,7 @@
 					(start -1.27 2.667)
 					(end 0 2.413)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2410,7 +2414,7 @@
 					(start -1.27 5.207)
 					(end 0 4.953)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2432,7 +2436,7 @@
 					(start 3.81 -4.953)
 					(end 2.54 -5.207)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2443,7 +2447,7 @@
 					(start 3.81 -2.413)
 					(end 2.54 -2.667)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2454,7 +2458,7 @@
 					(start 3.81 0.127)
 					(end 2.54 -0.127)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2465,7 +2469,7 @@
 					(start 3.81 2.667)
 					(end 2.54 2.413)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2476,7 +2480,7 @@
 					(start 3.81 5.207)
 					(end 2.54 4.953)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2961,7 +2965,8 @@
 		)
 		(symbol "Device:Crystal"
 			(pin_numbers hide)
-			(pin_names hide)
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3248,6 +3253,9 @@
 			)
 		)
 		(symbol "Interface_USB:USB2514B_Bi"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3996,9 +4004,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4046,7 +4054,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4072,8 +4080,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6345,7 +6353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/672984090_sd.pdf"
+		(property "Datasheet" "Conn USB Type A RCP 4/4 POS Solder RA Thru-Hole 8 Terminal 2 Port Tray"
 			(at 207.01 125.73 0)
 			(effects
 				(font
@@ -6374,7 +6382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "	2751688"
+		(property "Field5" "2751688"
 			(at 207.01 125.73 0)
 			(effects
 				(font
@@ -6384,7 +6392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field6" "690-008-221-904"
+		(property "Field6" "None"
 			(at 207.01 125.73 0)
 			(effects
 				(font
@@ -6394,7 +6402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field7" "EDAC"
+		(property "Field7" "Molex"
 			(at 207.01 125.73 0)
 			(effects
 				(font
@@ -6404,7 +6412,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field8" "UCON00727"
+		(property "Field8" "None"
 			(at 207.01 125.73 0)
 			(effects
 				(font
@@ -6512,7 +6520,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 243.84 128.27 0)
 			(effects
 				(font
@@ -6578,7 +6586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 261.62 128.27 0)
 			(effects
 				(font
@@ -6633,7 +6641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.toby.co.uk/uploads/publications/1673.pdf"
+		(property "Datasheet" "~"
 			(at 251.46 121.92 0)
 			(effects
 				(font
@@ -6642,7 +6650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 251.46 121.92 0)
 			(effects
 				(font
@@ -6772,7 +6780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_usb_micro.pd"
+		(property "Datasheet" "~"
 			(at 124.46 40.64 0)
 			(effects
 				(font
@@ -6781,7 +6789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB mini/micro connector"
 			(at 128.27 39.37 0)
 			(effects
 				(font
@@ -6907,7 +6915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 40.64 45.72 0)
 			(effects
 				(font
@@ -6916,7 +6924,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 40.64 45.72 0)
 			(effects
 				(font
@@ -7038,7 +7046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 172.72 86.36 0)
 			(effects
 				(font
@@ -7095,7 +7103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "~"
 			(at 243.84 83.82 0)
 			(effects
 				(font
@@ -7104,7 +7112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 243.84 83.82 0)
 			(effects
 				(font
@@ -7226,7 +7234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 243.84 87.63 0)
 			(effects
 				(font
@@ -7283,7 +7291,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "~"
 			(at 254 83.82 0)
 			(effects
 				(font
@@ -7292,7 +7300,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 254 83.82 0)
 			(effects
 				(font
@@ -7414,7 +7422,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 254 87.63 0)
 			(effects
 				(font
@@ -7471,7 +7479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "~"
 			(at 264.16 83.82 0)
 			(effects
 				(font
@@ -7480,7 +7488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 264.16 83.82 0)
 			(effects
 				(font
@@ -7594,7 +7602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "~"
 			(at 274.32 83.82 0)
 			(effects
 				(font
@@ -7603,7 +7611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 274.32 83.82 0)
 			(effects
 				(font
@@ -7725,7 +7733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 198.12 120.65 0)
 			(effects
 				(font
@@ -7790,7 +7798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 198.12 137.16 0)
 			(effects
 				(font
@@ -7847,7 +7855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 33.02 72.39 0)
 			(effects
 				(font
@@ -7856,7 +7864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 33.02 72.39 0)
 			(effects
 				(font
@@ -7995,7 +8003,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "	31-AP22653W6-7CT-ND"
+		(property "Field5" "AP2553W6-7DICT-ND"
 			(at 203.2 80.01 0)
 			(effects
 				(font
@@ -8101,7 +8109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB 2.0 Hi-Speed Hub Controller"
 			(at 123.19 111.76 0)
 			(effects
 				(font
@@ -8328,7 +8336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 80.01 110.49 0)
 			(effects
 				(font
@@ -8393,7 +8401,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 184.15 87.63 0)
 			(effects
 				(font
@@ -8450,7 +8458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 83.82 146.05 0)
 			(effects
 				(font
@@ -8459,7 +8467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 83.82 146.05 0)
 			(effects
 				(font
@@ -8564,7 +8572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 76.2 146.05 0)
 			(effects
 				(font
@@ -8573,7 +8581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 76.2 146.05 0)
 			(effects
 				(font
@@ -8678,7 +8686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 68.58 146.05 0)
 			(effects
 				(font
@@ -8687,7 +8695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 68.58 146.05 0)
 			(effects
 				(font
@@ -8800,7 +8808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 68.58 152.4 0)
 			(effects
 				(font
@@ -8865,7 +8873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 76.2 152.4 0)
 			(effects
 				(font
@@ -8930,7 +8938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 83.82 152.4 0)
 			(effects
 				(font
@@ -8995,7 +9003,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 91.44 152.4 0)
 			(effects
 				(font
@@ -9052,7 +9060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 222.25 80.01 0)
 			(effects
 				(font
@@ -9061,7 +9069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 222.25 80.01 0)
 			(effects
 				(font
@@ -9183,7 +9191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 226.06 87.63 0)
 			(effects
 				(font
@@ -9248,7 +9256,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 264.16 87.63 0)
 			(effects
 				(font
@@ -9313,7 +9321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 274.32 87.63 0)
 			(effects
 				(font
@@ -9378,7 +9386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 219.71 140.97 0)
 			(effects
 				(font
@@ -9443,7 +9451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 128.27 52.07 0)
 			(effects
 				(font
@@ -9645,7 +9653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 123.19 152.4 0)
 			(effects
 				(font
@@ -9710,7 +9718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 43.18 74.93 0)
 			(effects
 				(font
@@ -9775,7 +9783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 33.02 76.2 0)
 			(effects
 				(font
@@ -9832,7 +9840,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 86.36 109.22 0)
 			(effects
 				(font
@@ -9841,7 +9849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 86.36 109.22 0)
 			(effects
 				(font
@@ -9946,7 +9954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 91.44 146.05 0)
 			(effects
 				(font
@@ -9955,7 +9963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 91.44 146.05 0)
 			(effects
 				(font
@@ -10060,7 +10068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 116.84 168.91 0)
 			(effects
 				(font
@@ -10069,7 +10077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 116.84 168.91 0)
 			(effects
 				(font
@@ -10183,7 +10191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 128.27 168.91 0)
 			(effects
 				(font
@@ -10192,7 +10200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 128.27 168.91 0)
 			(effects
 				(font
@@ -10306,7 +10314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 138.43 168.91 0)
 			(effects
 				(font
@@ -10315,7 +10323,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 138.43 168.91 0)
 			(effects
 				(font
@@ -10429,7 +10437,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 93.218 168.91 0)
 			(effects
 				(font
@@ -10438,7 +10446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 93.218 168.91 0)
 			(effects
 				(font
@@ -10560,7 +10568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 74.93 176.53 0)
 			(effects
 				(font
@@ -10617,7 +10625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "~"
 			(at 74.93 168.91 0)
 			(effects
 				(font
@@ -10626,7 +10634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 74.93 168.91 0)
 			(effects
 				(font
@@ -10740,7 +10748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "~"
 			(at 84.074 168.91 0)
 			(effects
 				(font
@@ -10749,7 +10757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 84.074 168.91 0)
 			(effects
 				(font
@@ -10870,7 +10878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Two pin crystal"
 			(at 48.26 125.73 0)
 			(effects
 				(font
@@ -10975,7 +10983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GJM1555C1H270JB01-01.pdf"
+		(property "Datasheet" "~"
 			(at 36.83 130.81 0)
 			(effects
 				(font
@@ -10984,7 +10992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 36.83 130.81 0)
 			(effects
 				(font
@@ -11098,7 +11106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GJM1555C1H270JB01-01.pdf"
+		(property "Datasheet" "~"
 			(at 57.15 130.81 0)
 			(effects
 				(font
@@ -11107,7 +11115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 57.15 130.81 0)
 			(effects
 				(font
@@ -11229,7 +11237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 46.99 137.16 0)
 			(effects
 				(font
@@ -11294,7 +11302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 201.93 55.88 0)
 			(effects
 				(font
@@ -11359,7 +11367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 230.378 87.63 0)
 			(effects
 				(font
@@ -11416,7 +11424,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 103.378 168.91 0)
 			(effects
 				(font
@@ -11425,7 +11433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 103.378 168.91 0)
 			(effects
 				(font
@@ -11539,7 +11547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 148.844 168.91 0)
 			(effects
 				(font
@@ -11548,7 +11556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 148.844 168.91 0)
 			(effects
 				(font
@@ -11662,7 +11670,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KA73-01.pdf"
+		(property "Datasheet" "~"
 			(at 172.72 82.55 0)
 			(effects
 				(font
@@ -11671,7 +11679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 172.72 82.55 0)
 			(effects
 				(font
@@ -11792,7 +11800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4-Channel ESD Protection for Super-Speed USB 3.0 Interface, USON-10"
 			(at 201.93 43.18 0)
 			(effects
 				(font
