@@ -3,4 +3,5 @@
   (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/CM4IO.kicad_sym")(options "")(descr ""))
   (lib (name "2024-10-13_10-13-09")(type "KiCad")(uri "${KIPRJMOD}/additional components/AMP03GPZ/KiCADv6/2024-10-13_10-13-09.kicad_sym")(options "")(descr ""))
   (lib (name "2024-10-13_18-48-05")(type "KiCad")(uri "${KIPRJMOD}/additional components/LF353N_NOPB/KiCADv6/2024-10-13_18-48-05.kicad_sym")(options "")(descr ""))
+  (lib (name "KC2016Z")(type "KiCad")(uri "${KIPRJMOD}/additional components/KC2016Z.kicad_sym")(options "")(descr ""))
 )

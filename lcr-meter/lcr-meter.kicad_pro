@@ -614,6 +614,10 @@
     [
       "b6722af3-221f-4f9f-a2ef-4539be9909c4",
       "USB Hub"
+    ],
+    [
+      "9396ea9a-763d-4c24-9bdb-5e632462f1da",
+      "MCU"
     ]
   ],
   "text_variables": {}

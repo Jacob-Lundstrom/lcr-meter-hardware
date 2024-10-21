@@ -11332,7 +11332,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005e9b65ca")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0109"
 			(at 230.378 93.98 0)
 			(effects
 				(font
@@ -11382,7 +11382,7 @@
 		(instances
 			(project "lcr-meter"
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/fa0205ff-d840-4c89-b6d9-0bee6ad4a2ef/b6722af3-221f-4f9f-a2ef-4539be9909c4"
-					(reference "#PWR01")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
