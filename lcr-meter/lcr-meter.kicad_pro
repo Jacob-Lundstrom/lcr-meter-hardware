@@ -580,10 +580,6 @@
       "Root"
     ],
     [
-      "fa0205ff-d840-4c89-b6d9-0bee6ad4a2ef",
-      "Raspberry Pi Computer Module 4"
-    ],
-    [
       "46ee5347-8922-4c9f-a4b3-4d37bef42e8e",
       "DAC"
     ],
@@ -596,24 +592,12 @@
       "Sensing"
     ],
     [
+      "2472359e-a495-4a26-8e30-4c41d4daaa00",
+      "LCD"
+    ],
+    [
       "f2a8366c-faa8-47bd-8bfe-1b09106a7ae4",
       "PSUs"
-    ],
-    [
-      "eb4da58b-6641-408c-9d58-4eab2fcc248b",
-      "High-Speed"
-    ],
-    [
-      "744b4b09-81e0-4bc7-8570-49840632c7bc",
-      "GPIO"
-    ],
-    [
-      "41bdffed-128a-42dc-8ebc-1e039c7e32ad",
-      "RTC"
-    ],
-    [
-      "b6722af3-221f-4f9f-a2ef-4539be9909c4",
-      "USB Hub"
     ],
     [
       "9396ea9a-763d-4c24-9bdb-5e632462f1da",
