@@ -642,6 +642,16 @@
 		)
 		(uuid "b5333b79-83fb-4484-b459-45913bf049d8")
 	)
+	(text "Should not need decoupling or any external components."
+		(exclude_from_sim no)
+		(at 158.75 113.538 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "31cf7a26-a169-4a08-8fe6-a0a7a9d313c9")
+	)
 	(hierarchical_label "SCK"
 		(shape output)
 		(at 179.07 91.44 0)
