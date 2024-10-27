@@ -2175,14 +2175,15 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_MEC_5E"
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0.635 5.715 0)
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2190,8 +2191,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5E"
-				(at 0 -3.175 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2199,7 +2200,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 7.62 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2207,8 +2208,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-				(at 0 7.62 0)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2216,7 +2217,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "MEC 5E single pole normally-open tactile switch"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2234,18 +2235,9 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_MEC_5E_0_1"
+			(symbol "SW_Push_0_1"
 				(circle
-					(center -1.778 2.54)
+					(center -2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -2257,7 +2249,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.286 3.81) (xy 2.286 3.81)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -2269,31 +2261,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.81) (xy 0 5.588)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.54 2.54) (xy -2.286 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.54 2.54) (xy 2.286 2.54)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2304,7 +2272,7 @@
 					)
 				)
 				(circle
-					(center 1.778 2.54)
+					(center 2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -2315,7 +2283,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -2333,7 +2301,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -2343,42 +2311,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2612,10 +2544,10 @@
 		(uuid "07c93190-780a-4e3d-a15b-fd6ca29a21ce")
 	)
 	(junction
-		(at 105.41 119.38)
+		(at 45.72 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1791cd19-4cf6-4f49-9620-1930da0ad558")
+		(uuid "1741c447-4c3a-4a7f-a0ee-8c672f373d0d")
 	)
 	(junction
 		(at 63.5 124.46)
@@ -2678,18 +2610,6 @@
 		(uuid "73832bb9-513b-468b-a54a-15aba5527058")
 	)
 	(junction
-		(at 44.45 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "738a9018-9481-4560-9bba-9afa1254c81c")
-	)
-	(junction
-		(at 46.99 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7593b6a7-afcd-4eca-9040-d591ad84ce0b")
-	)
-	(junction
 		(at 105.41 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2702,22 +2622,10 @@
 		(uuid "7df64900-ad48-49f0-8b02-708b3e6d8578")
 	)
 	(junction
-		(at 46.99 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8192f4ff-9a79-4c52-977d-a789a5453e06")
-	)
-	(junction
 		(at 171.45 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "831f58e9-f8a2-4546-ad36-0a46e58c88a5")
-	)
-	(junction
-		(at 45.72 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "86020da5-bb17-4575-b37b-6c227b393390")
 	)
 	(junction
 		(at 63.5 88.9)
@@ -2726,22 +2634,10 @@
 		(uuid "86170914-3b15-4698-b12b-e1f76f6b4957")
 	)
 	(junction
-		(at 118.11 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f33e6a5-bac3-43d5-9573-a0aaa190b9d7")
-	)
-	(junction
 		(at 214.63 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "929c2032-f069-4e9e-98f5-2c70617b6b83")
-	)
-	(junction
-		(at 45.72 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a208a311-3c14-4bc2-aa7a-0ab1896644d9")
 	)
 	(junction
 		(at 118.11 107.95)
@@ -2768,10 +2664,10 @@
 		(uuid "effd5438-9ee0-47d5-8683-29d1bed3f240")
 	)
 	(junction
-		(at 44.45 124.46)
+		(at 45.72 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f61338cc-5819-43ff-bfe9-2aa3bcdae26a")
+		(uuid "feff4d5e-3400-4f23-b992-4c645fb3b9ba")
 	)
 	(wire
 		(pts
@@ -2785,16 +2681,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 134.62) (xy 46.99 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fd34a04-bb78-4028-8143-c02a14b9c6ed")
-	)
-	(wire
-		(pts
 			(xy 157.48 49.53) (xy 171.45 49.53)
 		)
 		(stroke
@@ -2802,16 +2688,6 @@
 			(type default)
 		)
 		(uuid "14dde283-195f-4e7f-a066-32a15963b8fe")
-	)
-	(wire
-		(pts
-			(xy 105.41 119.38) (xy 118.11 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "177a013d-669a-4959-8edf-61087b8ca6a8")
 	)
 	(wire
 		(pts
@@ -2855,7 +2731,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 88.9) (xy 46.99 88.9)
+			(xy 31.75 88.9) (xy 45.72 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2935,16 +2811,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 88.9) (xy 53.34 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57238936-3cb2-4033-a921-96bf452736fa")
-	)
-	(wire
-		(pts
 			(xy 219.71 44.45) (xy 222.25 44.45)
 		)
 		(stroke
@@ -3005,7 +2871,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 124.46) (xy 53.34 124.46)
+			(xy 31.75 124.46) (xy 45.72 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3085,16 +2951,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 124.46) (xy 44.45 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9424cc33-b976-4a78-bebe-98441acb7125")
-	)
-	(wire
-		(pts
 			(xy 105.41 102.87) (xy 118.11 102.87)
 		)
 		(stroke
@@ -3125,36 +2981,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 88.9) (xy 44.45 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af1c0e1a-7934-467b-b713-e393ea109aeb")
-	)
-	(wire
-		(pts
-			(xy 44.45 134.62) (xy 45.72 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b982bfc1-5e31-4af8-b94b-22d888934552")
-	)
-	(wire
-		(pts
-			(xy 45.72 99.06) (xy 46.99 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbdda42d-a536-4df3-bd66-8cafac957241")
-	)
-	(wire
-		(pts
 			(xy 91.44 119.38) (xy 105.41 119.38)
 		)
 		(stroke
@@ -3175,16 +3001,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 124.46) (xy 46.99 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc818f33-156c-42cc-84a2-2fdef414f0af")
-	)
-	(wire
-		(pts
 			(xy 247.65 82.55) (xy 234.95 82.55)
 		)
 		(stroke
@@ -3195,6 +3011,26 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 88.9) (xy 53.34 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d001e470-9a6e-46d2-b529-d640075f4428")
+	)
+	(wire
+		(pts
+			(xy 45.72 124.46) (xy 53.34 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4ed4e1a-7c8b-4f47-80cb-a20e57287733")
+	)
+	(wire
+		(pts
 			(xy 214.63 44.45) (xy 217.17 44.45)
 		)
 		(stroke
@@ -3202,26 +3038,6 @@
 			(type default)
 		)
 		(uuid "e0ca02f0-0fb2-42f5-be34-76009aa82d85")
-	)
-	(wire
-		(pts
-			(xy 44.45 99.06) (xy 45.72 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5065ae4-4b13-4993-b65c-711f9463a0ac")
-	)
-	(wire
-		(pts
-			(xy 118.11 124.46) (xy 105.41 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed204bc7-1df3-4b81-8687-52f42fd06fd7")
 	)
 	(wire
 		(pts
@@ -3863,72 +3679,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "08955c96-0d43-463e-ad0a-95858f5b0a50")
-		(property "Reference" "#PWR028"
-			(at 45.72 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.72 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2bb547af-4b0a-4882-93f6-7d15b1178699")
-		)
-		(instances
-			(project ""
-				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 66.04 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4449,82 +4199,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 46.99 129.54 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "208b8472-7de3-42e2-b918-4006a9e292a9")
-		(property "Reference" "SW2"
-			(at 48.26 128.2699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_MEC_5E"
-			(at 48.26 130.8099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
-			(at 39.37 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-			(at 39.37 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 46.99 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "e8cb03d4-59e2-49da-a090-658945c8859f")
-		)
-		(pin "1"
-			(uuid "3fdc95de-3059-4f88-89ee-10d3585ee1df")
-		)
-		(pin "3"
-			(uuid "eb43a30f-b32a-414f-b010-8fefaae1dd3b")
-		)
-		(pin "2"
-			(uuid "65f6e274-7088-4f2c-b32f-79aec04043e1")
-		)
-		(instances
-			(project "lcr-meter"
-				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 105.41 49.53 0)
 		(unit 1)
@@ -4798,6 +4472,72 @@
 			(project "lcr-meter"
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a0a9022-0f20-499e-a0dc-2efd779c1efd")
+		(property "Reference" "#PWR028"
+			(at 45.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6c333a4-65b4-4cb6-94b2-c57feac6031f")
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -5299,7 +5039,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 124.46 0)
+		(at 105.41 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5308,7 +5048,7 @@
 		(fields_autoplaced yes)
 		(uuid "642b9dbc-8326-4986-9e88-d6aef5a7bf40")
 		(property "Reference" "#PWR082"
-			(at 118.11 130.81 0)
+			(at 105.41 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5317,7 +5057,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 129.54 0)
+			(at 105.41 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5325,7 +5065,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 124.46 0)
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5334,7 +5074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 124.46 0)
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5343,7 +5083,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 124.46 0)
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5978,6 +5718,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 45.72 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e31da36-d0e0-42af-9fed-66ba9a6df139")
+		(property "Reference" "SW1"
+			(at 46.99 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 46.99 95.2499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
+			(at 40.64 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 45.72 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "441597dd-3414-47fe-9257-788e7eed0aff")
+		)
+		(pin "1"
+			(uuid "19af2a50-1b6d-4f97-9f41-2b1573b41992")
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 105.41 105.41 0)
 		(unit 1)
@@ -6458,152 +6268,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 46.99 93.98 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2f20001-007b-43d0-9895-d9156ab55de0")
-		(property "Reference" "SW1"
-			(at 48.26 92.7099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_MEC_5E"
-			(at 48.26 95.2499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
-			(at 39.37 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-			(at 39.37 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 46.99 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "e7bfd18c-4a03-4c03-a07e-ead3301f90eb")
-		)
-		(pin "1"
-			(uuid "3900ff9c-c526-4f4e-8c58-495306d9f72d")
-		)
-		(pin "3"
-			(uuid "1d85911c-10b1-4e52-96a4-daedf34b3446")
-		)
-		(pin "2"
-			(uuid "92758b43-5e9c-4722-8d11-784e6f997370")
-		)
-		(instances
-			(project ""
-				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 118.11 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3522b78-61ea-4cfb-8126-60857ea89912")
-		(property "Reference" "C21"
-			(at 120.65 120.6562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 120.65 123.1962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "37fd15e5-db17-4f90-b4ac-41c92d2b07e7")
-		)
-		(pin "2"
-			(uuid "e8150d36-feb1-4408-b2ca-9eb88c460ea7")
-		)
-		(instances
-			(project "lcr-meter"
-				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 191.77 118.11 0)
 		(unit 1)
@@ -6934,6 +6598,76 @@
 			(project "lcr-meter"
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
 					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 45.72 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0b9f07a-91af-45fd-a8fb-fcbe9cf70032")
+		(property "Reference" "SW2"
+			(at 46.99 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 46.99 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H5mm"
+			(at 40.64 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 45.72 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4d4acf33-1d8a-4b90-8db5-daea81cb2e8c")
+		)
+		(pin "1"
+			(uuid "c754c9aa-6ecb-4a26-804a-6a9e0b28495c")
+		)
+		(instances
+			(project ""
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/9396ea9a-763d-4c24-9bdb-5e632462f1da"
+					(reference "SW2")
 					(unit 1)
 				)
 			)

@@ -2146,6 +2146,12 @@
 		(uuid "ab5e09b6-868f-49f3-95c5-8382489364ee")
 	)
 	(junction
+		(at 228.6 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c690f09a-ba40-4a49-8065-c034ca596907")
+	)
+	(junction
 		(at 196.85 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2186,6 +2192,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d7151457-74ff-4484-a0e6-4b657aa16ad6")
+	)
+	(junction
+		(at 238.76 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d77c2528-589f-4661-81da-0da562e5383c")
 	)
 	(junction
 		(at 254 149.86)
@@ -2530,6 +2542,16 @@
 			(type default)
 		)
 		(uuid "5a64aa63-fda4-4cdb-b8fc-0404184785fc")
+	)
+	(wire
+		(pts
+			(xy 238.76 60.96) (xy 228.6 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ba0c89f-3e11-44c1-a1b9-6e92ec592320")
 	)
 	(wire
 		(pts
@@ -2973,6 +2995,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 55.88) (xy 238.76 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4921fde-f6d3-4305-b300-53b47b819071")
+	)
+	(wire
+		(pts
 			(xy 33.02 149.86) (xy 41.91 149.86)
 		)
 		(stroke
@@ -3091,7 +3123,7 @@
 	)
 	(rectangle
 		(start 161.29 25.4)
-		(end 227.33 72.39)
+		(end 252.73 72.39)
 		(stroke
 			(width 0)
 			(type default)
@@ -4608,6 +4640,72 @@
 			(project ""
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/b8718128-d741-4369-b265-769f39903469"
 					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 238.76 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2eeba999-d176-4c50-a124-f243f82e6cf8")
+		(property "Reference" "#PWR0102"
+			(at 238.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54a26cab-0594-4e42-845b-fc79c7f59ba2")
+		)
+		(instances
+			(project ""
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/b8718128-d741-4369-b265-769f39903469"
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -6759,6 +6857,76 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 228.6 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2735fd3-a01d-40d5-b6cb-c7eebc668d3d")
+		(property "Reference" "C51"
+			(at 231.14 57.1562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 231.14 59.6962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 228.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 228.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e9c9472e-2f7c-4fc2-a2f2-0acf81cddfdf")
+		)
+		(pin "1"
+			(uuid "48ca3549-4b48-40fd-8e6b-0cb1115752f8")
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/b8718128-d741-4369-b265-769f39903469"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 165.1 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6895,6 +7063,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+1V8")
+		(at 228.6 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb107275-8336-44d2-9dd9-4255e35b2f85")
+		(property "Reference" "#PWR0101"
+			(at 228.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 228.6 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 228.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdc3a275-476b-4de7-998b-3eb0b12918e8")
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/b8718128-d741-4369-b265-769f39903469"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 207.01 63.5 0)
 		(unit 1)
@@ -6959,6 +7193,76 @@
 			(project "lcr-meter"
 				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/b8718128-d741-4369-b265-769f39903469"
 					(reference "C71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 238.76 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ceeeac07-ce62-481a-af0c-4b04eced4572")
+		(property "Reference" "C36"
+			(at 241.3 57.1562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 241.3 59.6962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 238.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 238.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b26907e4-98d2-436e-b364-e0ae90cdbd11")
+		)
+		(pin "1"
+			(uuid "7c2b3340-a75c-46ef-8f7d-0b51d156a3cc")
+		)
+		(instances
+			(project "lcr-meter"
+				(path "/ba333b18-b098-477b-9dd4-aab7b9764d9c/b8718128-d741-4369-b265-769f39903469"
+					(reference "C36")
 					(unit 1)
 				)
 			)
