@@ -3624,7 +3624,7 @@
 				)
 			)
 		)
-		(property "Footprint" "N_8_ADI"
+		(property "Footprint" "footprints:N_8_ADI"
 			(at 41.91 144.78 0)
 			(effects
 				(font
@@ -3861,7 +3861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 217.17 63.5 0)
 			(effects
 				(font
@@ -3995,7 +3995,7 @@
 				)
 			)
 		)
-		(property "Footprint" "N_8_ADI"
+		(property "Footprint" "footprints:N_8_ADI"
 			(at 91.44 105.41 0)
 			(effects
 				(font
@@ -4153,7 +4153,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 40.64 34.29 0)
 			(effects
 				(font
@@ -5124,7 +5124,7 @@
 				)
 			)
 		)
-		(property "Footprint" "N_8_ADI"
+		(property "Footprint" "footprints:N_8_ADI"
 			(at 41.91 105.41 0)
 			(effects
 				(font
@@ -6169,7 +6169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 217.17 49.53 0)
 			(effects
 				(font
@@ -7330,7 +7330,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 217.17 35.56 0)
 			(effects
 				(font
@@ -7678,7 +7678,7 @@
 				)
 			)
 		)
-		(property "Footprint" "N_8_ADI"
+		(property "Footprint" "footprints:N_8_ADI"
 			(at 91.44 144.78 0)
 			(effects
 				(font

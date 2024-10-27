@@ -2674,7 +2674,7 @@
 				)
 			)
 		)
-		(property "Footprint" "N08E"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 146.05 109.22 0)
 			(effects
 				(font
@@ -3038,7 +3038,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -3669,7 +3669,7 @@
 				)
 			)
 		)
-		(property "Footprint" "N08E"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 146.05 78.74 0)
 			(effects
 				(font
@@ -3757,7 +3757,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 134.62 66.04 0)
 			(effects
 				(font
