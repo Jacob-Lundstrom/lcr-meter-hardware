@@ -1,0 +1,8 @@
+Mod board was created, should be used to replace AMP03s at U2 and U3.
+
+In Rev B, input buffering to create an instrumentation amplifier will need to be added.
+
+
+For correct functionality of the push buttons, cut the trace on the top copper going to the MCU, and solder a bodge wire to the capacitor.
+
+That was a dumb mistake.

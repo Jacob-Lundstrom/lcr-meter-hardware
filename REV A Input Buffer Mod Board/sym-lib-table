@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "KC2016Z")(type "KiCad")(uri "${KIPRJMOD}/additional components/KC2016Z.kicad_sym")(options "")(descr ""))
+  (lib (name "AMP03")(type "KiCad")(uri "${KIPRJMOD}/additional components/AMP03GPZ/KiCADv6/2024-10-13_10-13-09.kicad_sym")(options "")(descr ""))
+  (lib (name "LF353N")(type "KiCad")(uri "${KIPRJMOD}/additional components/LF353N_NOPB/LF353N.kicad_sym")(options "")(descr ""))
+)

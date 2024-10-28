@@ -3405,13 +3405,13 @@
 	)
 	(hierarchical_label "Range_3"
 		(shape output)
-		(at 234.95 113.03 0)
+		(at 199.39 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "51d3dd17-8e59-440d-96ae-f4a0ad499777")
 	)
@@ -3441,13 +3441,13 @@
 	)
 	(hierarchical_label "Range_2"
 		(shape output)
-		(at 234.95 110.49 0)
+		(at 199.39 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "75aa07bb-4cb1-47f4-bb93-63a6b1d23f8c")
 	)
@@ -3477,13 +3477,13 @@
 	)
 	(hierarchical_label "Range_0"
 		(shape output)
-		(at 234.95 105.41 0)
+		(at 199.39 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "908d5dcb-a88e-4a05-89bd-0ffa091ed510")
 	)
@@ -3513,13 +3513,13 @@
 	)
 	(hierarchical_label "Range_1"
 		(shape output)
-		(at 234.95 107.95 0)
+		(at 199.39 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "a21c0838-bf67-403a-8952-3d643e397635")
 	)
