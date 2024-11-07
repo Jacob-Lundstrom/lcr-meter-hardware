@@ -7,4 +7,3 @@ For correct functionality of the push buttons, cut the trace on the top copper g
 
 That was a dumb mistake.
 
-Add input protection on the programming header. Should be fine for rev A though.
