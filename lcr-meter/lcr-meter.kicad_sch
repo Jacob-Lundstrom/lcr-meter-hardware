@@ -806,16 +806,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 142.24) (xy 102.87 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "033f4fe5-ce4d-4ec6-89b5-4f0126c76e24")
-	)
-	(wire
-		(pts
 			(xy 68.58 69.85) (xy 52.07 69.85)
 		)
 		(stroke
@@ -896,13 +886,13 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 132.08) (xy 102.87 132.08)
+			(xy 88.9 142.24) (xy 102.87 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "354d29f8-e476-42cf-9756-377fb7718df1")
+		(uuid "27011541-74fd-49de-9864-a6ebeea3d1e8")
 	)
 	(wire
 		(pts
@@ -946,6 +936,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 137.16) (xy 102.87 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "448563fd-40af-4954-b951-1c1bfaab6001")
+	)
+	(wire
+		(pts
 			(xy 142.24 133.35) (xy 148.59 133.35)
 		)
 		(stroke
@@ -976,23 +976,13 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 139.7) (xy 102.87 139.7)
+			(xy 88.9 132.08) (xy 102.87 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "523ee629-322b-4eb5-a11c-8d3abb720213")
-	)
-	(wire
-		(pts
-			(xy 88.9 137.16) (xy 102.87 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c827d0c-d5a1-4c43-aca2-89559a2f1f85")
+		(uuid "518d2107-d897-409d-a4d6-1dbad0f48df5")
 	)
 	(wire
 		(pts
@@ -1013,16 +1003,6 @@
 			(type default)
 		)
 		(uuid "61f3494f-c7d3-4d23-9d6f-8d9cfd8d810a")
-	)
-	(wire
-		(pts
-			(xy 88.9 129.54) (xy 102.87 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69733bfa-ff25-4e6c-b8d8-8bd4973f1485")
 	)
 	(wire
 		(pts
@@ -1056,6 +1036,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 129.54) (xy 102.87 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "706b0cca-075c-4a6b-931f-da6b481130c2")
+	)
+	(wire
+		(pts
 			(xy 74.93 73.66) (xy 74.93 62.23)
 		)
 		(stroke
@@ -1083,16 +1073,6 @@
 			(type default)
 		)
 		(uuid "91904d20-3fa4-44eb-a779-7a1c0dfd4742")
-	)
-	(wire
-		(pts
-			(xy 88.9 134.62) (xy 102.87 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9391c8bf-cedd-4146-a85a-062eaadf4a71")
 	)
 	(wire
 		(pts
@@ -1126,6 +1106,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 134.62) (xy 102.87 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abcb5658-37a3-43d1-b068-b9400f66658a")
+	)
+	(wire
+		(pts
 			(xy 52.07 62.23) (xy 55.88 62.23)
 		)
 		(stroke
@@ -1143,16 +1133,6 @@
 			(type default)
 		)
 		(uuid "be450e10-9935-4e69-aaae-359afa612e4a")
-	)
-	(wire
-		(pts
-			(xy 88.9 127) (xy 102.87 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf136ea6-ffaa-43a9-bc2b-16a22d7410b3")
 	)
 	(wire
 		(pts
@@ -1186,6 +1166,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 139.7) (xy 102.87 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1f0df54-5aeb-4ea9-829f-38c35351a5ad")
+	)
+	(wire
+		(pts
 			(xy 132.08 96.52) (xy 199.39 96.52)
 		)
 		(stroke
@@ -1193,6 +1183,16 @@
 			(type default)
 		)
 		(uuid "e40ce29a-4030-4ef3-9dd2-87bbd4917140")
+	)
+	(wire
+		(pts
+			(xy 88.9 127) (xy 102.87 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6b17f12-6c8a-4e84-ac91-ffd42fbc0beb")
 	)
 	(wire
 		(pts
@@ -1245,6 +1245,17 @@
 		)
 		(uuid "2569d23b-c250-4d53-9333-c31b52c3c4cd")
 	)
+	(text "SCHEMATIC FIXES NEEDED\nX Change Sense MUX footrpints\nX Chnage User input button schematic\nX Fix LCD interface\n- REMOVE EXT ADC?\nX Add 1 nF Capacitor in parallel with sine gen buffer amp\nX Add 20 pF Capacitor to output of AD9833\nX Swap zero Ohm resistors with jumpers\n"
+		(exclude_from_sim no)
+		(at 21.844 160.528 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "30981151-8937-4e51-bf9b-56114d1422d2")
+	)
 	(text "DONE"
 		(exclude_from_sim no)
 		(at 164.084 137.922 0)
@@ -1277,6 +1288,17 @@
 			(justify left bottom)
 		)
 		(uuid "77998fb4-1ffc-4288-965d-ca04d25eb05d")
+	)
+	(text "LAYOUT FIXES NEEDED\n- Change position of the Poewr switch. Unassembleable in current state."
+		(exclude_from_sim no)
+		(at 83.566 161.036 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b6ed5ddf-c3c3-4dcf-ab99-e7ba5d9f0c5e")
 	)
 	(text "DONE"
 		(exclude_from_sim no)
@@ -2600,7 +2622,7 @@
 			(uuid "9866ff95-02a9-4818-9a1b-b138579d4cfd")
 		)
 		(pin "SPI3_MISO" input
-			(at 102.87 127 180)
+			(at 102.87 142.24 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2610,7 +2632,7 @@
 			(uuid "f4c962bc-cc70-4a3e-b20f-8270c16808af")
 		)
 		(pin "SPI3_SCK" input
-			(at 102.87 132.08 180)
+			(at 102.87 137.16 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2620,7 +2642,7 @@
 			(uuid "79a1f4ce-5457-4cc8-bb2c-c40ab8f4d128")
 		)
 		(pin "LCD_DC" output
-			(at 102.87 137.16 180)
+			(at 102.87 132.08 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2630,7 +2652,7 @@
 			(uuid "077a2ab7-229f-416b-8d0e-a4c3017ff5f5")
 		)
 		(pin "LCD_RST" output
-			(at 102.87 139.7 180)
+			(at 102.87 129.54 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,7 +2662,7 @@
 			(uuid "5d9d3028-be1c-466f-a9f7-74be14d39134")
 		)
 		(pin "LCD_NCS" output
-			(at 102.87 142.24 180)
+			(at 102.87 127 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2650,7 +2672,7 @@
 			(uuid "df333200-c79f-4efb-806d-eb7bb900d9c6")
 		)
 		(pin "LCD_LED" output
-			(at 102.87 129.54 180)
+			(at 102.87 139.7 180)
 			(effects
 				(font
 					(size 1.27 1.27)
