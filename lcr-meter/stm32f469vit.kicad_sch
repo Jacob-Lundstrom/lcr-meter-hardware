@@ -2669,6 +2669,10 @@
 		(color 0 0 0 0)
 		(uuid "effd5438-9ee0-47d5-8683-29d1bed3f240")
 	)
+	(no_connect
+		(at 234.95 72.39)
+		(uuid "b991a396-3b11-4dd1-a301-701e98938a7b")
+	)
 	(wire
 		(pts
 			(xy 118.11 86.36) (xy 105.41 86.36)
@@ -3622,18 +3626,6 @@
 			(justify right)
 		)
 		(uuid "e3a5b5ed-3e28-4e0c-98c2-627c491ee188")
-	)
-	(hierarchical_label "MCP3202_NCS"
-		(shape output)
-		(at 234.95 72.39 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e42eee8d-6e77-4c8d-8af7-d55104282c60")
 	)
 	(hierarchical_label "SPI1_MOSI"
 		(shape input)
