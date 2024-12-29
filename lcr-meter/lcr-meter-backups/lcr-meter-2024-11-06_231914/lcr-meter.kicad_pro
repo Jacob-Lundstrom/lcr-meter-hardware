@@ -123,7 +123,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.15,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 1,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
@@ -637,7 +637,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "LCR-Meter-Rev-A-Schematics",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -654,7 +654,11 @@
     ],
     [
       "46ee5347-8922-4c9f-a4b3-4d37bef42e8e",
-      "Sine Generator"
+      "DAC"
+    ],
+    [
+      "dc4920c7-bef7-400a-82e9-2e6f0b5b3c21",
+      "ADC"
     ],
     [
       "b8718128-d741-4369-b265-769f39903469",
@@ -667,10 +671,6 @@
     [
       "f2a8366c-faa8-47bd-8bfe-1b09106a7ae4",
       "PSUs"
-    ],
-    [
-      "d10b9ddb-3fd2-4397-ac1a-1f4d5dfa6235",
-      "BNCs"
     ],
     [
       "9396ea9a-763d-4c24-9bdb-5e632462f1da",
